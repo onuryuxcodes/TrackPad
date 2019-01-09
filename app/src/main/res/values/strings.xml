@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrackPad</string>
+
+    <string name="x_axis_title">x-axis : </string>
+    <string name="y_axis_title">y-axis : </string>
+
+
+</resources>

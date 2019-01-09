@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackPadVolumeControlActivity">
+
+    <TextView
+        android:textSize="40sp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@color/colorBackground"
+            android:id="@+id/activity_track_pad_leftContainer"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:alpha="0.5"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:background="@color/colorBackground"
+            android:id="@+id/activity_track_pad_rightContainer"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:alpha="0.5"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.mood.trackpad.trackpad.TrackPadView
+        android:id="@+id/activity_track_pad_trackPadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/activity_track_pad_xAxisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_track_pad_yAxisTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/activity_track_pad_yAxisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/border"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="300dp">
+
+    <View
+        android:id="@+id/view_track_pad_horizontalLine"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:alpha="0.7"
+        android:layout_height="4dp"></View>
+
+    <View
+        android:id="@+id/view_track_pad_verticalLine"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        android:layout_width="4dp"
+        android:alpha="0.7"
+        android:layout_height="match_parent"></View>
+
+    <View
+        android:id="@+id/view_track_pad_draggableCircle"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
